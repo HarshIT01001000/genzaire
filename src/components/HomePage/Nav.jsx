@@ -17,8 +17,7 @@ function Nav() {
     <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
     <ul className="menu bg-black min-h-full w-80 p-4 text-white">
       {/* Sidebar content here */}
-      <li><a>Sidebar Item 1</a></li>
-      <li><a>Sidebar Item 2</a></li>
+      <li><a><img src="https://wtflex.in/cdn/shop/files/Heavyweight_Tshirt_Category_Icon_2b8cc473-ee67-4046-82c4-bb5ec02b0207.png?v=1698765353"></img>OverSize tee</a></li>
     </ul>
   </div>
     </div>
