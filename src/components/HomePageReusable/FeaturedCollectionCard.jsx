@@ -1,10 +1,21 @@
-function FeaturedCollectionCard({item1, item2, item3}){
+import { useState } from "react"
+function FeaturedCollectionCard({item1, item2, item3,Item4}){
+  const[isHovered, setIsHovered]=useState(false)
+
+  const handleMouseEnter=()=>{
+    setIsHovered(true)
+  }
+  const handleMouseLeave=()=>{
+    setIsHovered(false)
+  }
+  
     return(
         <>
-        <div className="card w-96 group">
+        <div className="card w-96 group" onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}>
         <figure>
           <img
-            src="https://wtflex.in/cdn/shop/files/wtf_wht.png?v=1687756362&width=360"
+            src={isHovered? item1:Item4}
             alt="Shoes"
             className="rounded-2xl h-[25rem] transition-transform duration-300 ease-in-out hover:scale-95"
           />
