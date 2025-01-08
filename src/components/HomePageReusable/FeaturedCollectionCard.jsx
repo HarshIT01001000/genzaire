@@ -17,7 +17,7 @@ function FeaturedCollectionCard({item1, item2, item3,Item4}){
           <img
             src={isHovered? item1:Item4}
             alt="Shoes"
-            className="rounded-2xl h-[25rem] transition-transform duration-300 ease-in-out hover:scale-95"
+            className=" h-[25rem] transition-transform duration-300 ease-in-out hover:scale-95"
           />
         </figure>
         <div className="card-body">

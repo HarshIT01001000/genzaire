@@ -20,7 +20,7 @@ function App() {
     <FeaturedCollection></FeaturedCollection>
     <Display></Display>
     <Exclusive></Exclusive>
-    <Footer></Footer>
+    <Footer></Footer> 
     </>
   )
 }

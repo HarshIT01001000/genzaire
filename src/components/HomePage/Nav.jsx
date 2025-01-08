@@ -5,9 +5,12 @@ function Nav() {
   return (
     <>
       <div className="navbar bg-black z-50">
+
+        {/* options */}
         <div className="navbar-start">
           <div className="drawer">
             <input id="my-drawer" type="checkbox" className="drawer-toggle" />
+
             <div className="drawer-content">
               {/* Page content here */}
               <label
@@ -17,30 +20,37 @@ function Nav() {
                 <IoApps />
               </label>
             </div>
+
             <div className="drawer-side z-50">
               <label
                 htmlFor="my-drawer"
                 aria-label="close sidebar"
                 className="drawer-overlay"
               ></label>
-              <ul className="menu bg-black min-h-full w-80 p-4 text-white">
+              <ul className=" bg-black min-h-full w-80 p-4 text-white">
                 {/* Sidebar content here */}
                 <li>
-                  <a>
+                  <a >
                     <img
                       src="https://wtflex.in/cdn/shop/files/Heavyweight_Tshirt_Category_Icon_2b8cc473-ee67-4046-82c4-bb5ec02b0207.png?v=1698765353"
                       alt="Oversize Tee"
                     />
-                    OverSize tee
+                    
                   </a>
                 </li>
               </ul>
+              
             </div>
+            
           </div>
         </div>
+
+        {/* Logo */}
         <div className="navbar-center">
           <a className="btn btn-ghost text-xl text-white">GW</a>
         </div>
+
+        {/* icons */}
         <div className="navbar-end">
           <button className="btn btn-ghost btn-circle">
             <svg
@@ -64,6 +74,9 @@ function Nav() {
             </div>
           </button>
         </div>
+
+
+
       </div>
     </>
   );
