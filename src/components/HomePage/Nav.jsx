@@ -47,7 +47,7 @@ function Nav() {
 
         {/* Logo */}
         <div className="navbar-center">
-          <a className="btn btn-ghost text-xl text-white">GW</a>
+          <a className="btn btn-ghost text-4xl text-white font-jersey">GW</a>
         </div>
 
         {/* icons */}

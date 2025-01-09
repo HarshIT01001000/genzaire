@@ -1,6 +1,8 @@
 function Exclusive() {
   return (
     <>
+    <div>
+    <h1 className=" text-center font-bold font-jersey text-5xl">Our Instagram Feeds</h1>
       <div className="grid grid-cols-3 gap-4 p-4">
         {/* Item 1 */}
         <div className="relative group">
@@ -80,6 +82,7 @@ function Exclusive() {
         </div>
 
         {/* Add similar structures for other images */}
+      </div>
       </div>
     </>
   );

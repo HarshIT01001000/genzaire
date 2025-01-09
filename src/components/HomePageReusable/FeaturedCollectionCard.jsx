@@ -11,7 +11,7 @@ function FeaturedCollectionCard({item1, item2, item3,Item4}){
   
     return(
         <>
-        <div className="card w-96 group" onMouseEnter={handleMouseEnter}
+        <div className="card group rounded-none" onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}>
         <figure>
           <img

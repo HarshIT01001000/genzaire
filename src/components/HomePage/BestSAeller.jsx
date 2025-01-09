@@ -1,12 +1,11 @@
 import FeaturedCollectionCard from "../HomePageReusable/FeaturedCollectionCard";
 
-function FeaturedCollection() {
+function BestSAeller() {
   return (
-    <>
     <div className=" items-center hero">
       {/* Section Heading */}
       <h1 className="text-center text-[3rem] md:text-[4rem] font-bold font-jersey mt-[-100rem]  md:mt-[-33rem]">
-        Featured Collection
+        Best Seller
       </h1>
 
       {/* Cards Container */}
@@ -43,13 +42,7 @@ function FeaturedCollection() {
         /></div>
       </div>
     </div>
-    
-
-
-
-
-  </>
   );
 }
 
-export default FeaturedCollection;
+export default BestSAeller;

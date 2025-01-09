@@ -8,6 +8,8 @@ import FeaturedCollection from './components/HomePage/FeaturedCollection.jsx'
 import Display from './components/HomePage/Display.jsx'
 import Footer from './components/HomePage/Footer.jsx'
 import Exclusive from './components/HomePage/Exclusive.jsx'
+import BestSeller from './components/HomePage/BestSAeller.jsx'
+import Marquee from './components/HomePage/Marquee.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,7 +20,9 @@ function App() {
     <Nav></Nav>
     <Hero></Hero>
     <FeaturedCollection></FeaturedCollection>
-    <Display></Display>
+    <Marquee></Marquee>
+    <BestSeller></BestSeller>
+    {/* <Display></Display> */}
     <Exclusive></Exclusive>
     <Footer></Footer> 
     </>
