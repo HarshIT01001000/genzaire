@@ -20,8 +20,8 @@ function FeaturedCollectionCard({item1, item2, item3,Item4}){
             className=" h-[25rem] transition-transform duration-300 ease-in-out hover:scale-95"
           />
         </figure>
-        <div className="card-body">
-          <p className="transition duration-300 group-hover:underline">
+        <div className="card-body mr-[6rem]">
+          <p className="transition duration-300 group-hover:underline font-bold">
             {item2}
           </p>
           <h2 className="card-title">{item3}</h2>

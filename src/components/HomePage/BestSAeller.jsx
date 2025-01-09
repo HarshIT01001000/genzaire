@@ -17,8 +17,8 @@ function BestSAeller() {
           item1={
             "https://wtflex.in/cdn/shop/files/wtf_wht.png?v=1687756362&width=360"
           }
-          item2={"mera bhai first class "}
-          item3={"999$/"}
+          item2={"FUSION PANEL Denim Jacket "}
+          item3={"₹999/"}
         />
         <FeaturedCollectionCard
           Item4={
@@ -27,8 +27,8 @@ function BestSAeller() {
           item1={
             "https://wtflex.in/cdn/shop/files/Shadow_hoodie_website_back.jpg?v=1735029928&width=360"
           }
-          item2={"mera bhai first class "}
-          item3={"999$/"}
+          item2={"FUSION PANEL Denim Jacket "}
+          item3={"₹999/"}
         />
         <div><FeaturedCollectionCard
           Item4={
@@ -37,8 +37,8 @@ function BestSAeller() {
           item1={
             "https://wtflex.in/cdn/shop/files/wtf_wht.png?v=1687756362&width=360"
           }
-          item2={"mera bhai first class "}
-          item3={"999$/"}
+          item2={"FUSION PANEL Denim Jacket "}
+          item3={"₹999/"}
         /></div>
       </div>
     </div>

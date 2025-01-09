@@ -11,9 +11,6 @@ function Exclusive() {
             alt="T-Shirt"
             className="object-cover w-full h-auto"
           />
-          <span className="absolute bottom-2 left-2 text-white text-sm bg-black bg-opacity-50 px-2 py-1 rounded">
-            The Great Escape
-          </span>
           {/* Instagram Logo */}
           <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity">
             <a
@@ -37,9 +34,6 @@ function Exclusive() {
             alt="Model"
             className="object-cover w-full h-auto"
           />
-          <span className="absolute bottom-2 left-2 text-white text-sm bg-black bg-opacity-50 px-2 py-1 rounded">
-            Conceptualized by ©
-          </span>
           {/* Instagram Logo */}
           <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity">
             <a
@@ -63,9 +57,6 @@ function Exclusive() {
             alt="T-Shirt"
             className="object-cover w-full h-auto"
           />
-          <span className="absolute bottom-2 left-2 text-white text-sm bg-black bg-opacity-50 px-2 py-1 rounded">
-            T-Shirt Collection
-          </span>
           <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity">
             <a
               href="https://www.instagram.com/genzaire.wardrobe?igsh=MXRtM3lpOHdlYmI4ZA=="

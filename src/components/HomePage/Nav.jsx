@@ -5,7 +5,6 @@ function Nav() {
   return (
     <>
       <div className="navbar bg-black z-50">
-
         {/* options */}
         <div className="navbar-start">
           <div className="drawer">
@@ -27,27 +26,40 @@ function Nav() {
                 aria-label="close sidebar"
                 className="drawer-overlay"
               ></label>
-              <ul className=" bg-black min-h-full w-80 p-4 text-white">
-                {/* Sidebar content here */}
-                <li>
-                  <a >
-                    <img
-                      src="https://wtflex.in/cdn/shop/files/Heavyweight_Tshirt_Category_Icon_2b8cc473-ee67-4046-82c4-bb5ec02b0207.png?v=1698765353"
-                      alt="Oversize Tee"
-                    />
-                    
-                  </a>
-                </li>
-              </ul>
-              
+              <ul className="menu md:bg-transparent bg-black text-base-content min-h-full w-80 p-4"></ul>
+              <div className=" flex flex-col">
+                <img
+                  src="https://wtflex.in/cdn/shop/files/Heavyweight_Tshirt_Category_Icon_2b8cc473-ee67-4046-82c4-bb5ec02b0207.png?v=1698765353"
+                  alt="Oversize Tee"
+                  className=" w-72 h-72 mt-10"
+                />
+                <div className="dropdown text-center mt-[-2.5rem]">
+                  <div tabIndex={0} role="button" className="btn m-1">
+                    Click
+                  </div>
+                  <ul
+                    tabIndex={0}
+                    className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow ml-[3rem]"
+                  >
+                    <li>
+                      <a>Basic</a>
+                    </li>
+                    <li>
+                      <a>Printed</a>
+                    </li>
+                    <li>
+                      <a>Coustmized</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            
           </div>
         </div>
 
         {/* Logo */}
         <div className="navbar-center">
-          <a className="btn btn-ghost text-4xl text-white font-jersey">GW</a>
+          <a className="btn btn-ghost text-xl text-white">GW</a>
         </div>
 
         {/* icons */}
@@ -74,9 +86,6 @@ function Nav() {
             </div>
           </button>
         </div>
-
-
-
       </div>
     </>
   );
