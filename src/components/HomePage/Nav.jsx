@@ -1,5 +1,6 @@
 import { IoApps } from "react-icons/io5";
 import { CgProfile } from "react-icons/cg";
+import { Link } from "react-router-dom";
 
 function Nav() {
   return (
@@ -42,13 +43,16 @@ function Nav() {
                     className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow ml-[3rem]"
                   >
                     <li>
-                      <a>Basic</a>
+                    <Link to={"/"}>Home</Link>
                     </li>
                     <li>
-                      <a>Printed</a>
+                    <Link to={"/ProductBasics"}>Basics</Link>
                     </li>
                     <li>
-                      <a>Coustmized</a>
+                    <Link to={"/ProductCoustmize"}>Coustmized</Link>
+                    </li>
+                    <li>
+                     <Link to={"/ProductPrinted"}>Printed</Link>
                     </li>
                   </ul>
                 </div>

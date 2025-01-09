@@ -1,16 +1,11 @@
-import FeaturedCollectionCard from "../HomePageReusable/FeaturedCollectionCard";
-
-function FeaturedCollection() {
-  return (
-    <>
-    <div className=" items-center hero">
-      {/* Section Heading */}
-      <h1 className="text-center text-[3rem] md:text-[4rem] font-bold font-jersey mt-[-100rem]  md:mt-[-33rem]">
-        Featured Collection
-      </h1>
-
-      {/* Cards Container */}
-      <div className="flex flex-col md:flex-row justify-center items-center  md:space-x-2 lg:space-x-10 mt-20 md:mt-[9rem] px-4 md:px-8 lg:px-16">
+import ProductsLayout from "../ProductsReuseableCompo/ProductsLayout"
+import FeaturedCollectionCard from "../HomePageReusable/FeaturedCollectionCard"
+function ProductCoustmize(){
+    return(
+        <>
+        <ProductsLayout
+        Item1={"Coustmize"}
+        Item2={<>
         <FeaturedCollectionCard
           Item4={
             "https://wtflex.in/cdn/shop/files/LocalsOnlyWhiteWebsiteFront.png?v=1726668069&width=360"
@@ -31,7 +26,7 @@ function FeaturedCollection() {
           item2={"FUSION PANEL Denim Jacket "}
           item3={"₹999/"}
         />
-        <div><FeaturedCollectionCard
+            <FeaturedCollectionCard
           Item4={
             "https://wtflex.in/cdn/shop/files/Artboard2-15.png?v=1707053447&width=360"
           }
@@ -40,11 +35,10 @@ function FeaturedCollection() {
           }
           item2={"FUSION PANEL Denim Jacket "}
           item3={"₹999/"}
-        /></div>
-      </div>
-    </div>
-  </>
-  );
+          />
+        </>}
+        ></ProductsLayout>
+        </>
+    )
 }
-
-export default FeaturedCollection;
+export default ProductCoustmize
