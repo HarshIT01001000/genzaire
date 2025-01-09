@@ -26,7 +26,9 @@ function ProductCoustmize(){
           item2={"FUSION PANEL Denim Jacket "}
           item3={"₹999/"}
         />
-            <FeaturedCollectionCard
+        <br></br>
+            <div>
+            <FeaturedCollectionCard 
           Item4={
             "https://wtflex.in/cdn/shop/files/Artboard2-15.png?v=1707053447&width=360"
           }
@@ -36,6 +38,7 @@ function ProductCoustmize(){
           item2={"FUSION PANEL Denim Jacket "}
           item3={"₹999/"}
           />
+            </div>
         </>}
         ></ProductsLayout>
         </>

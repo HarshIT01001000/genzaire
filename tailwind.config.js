@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       animation: {
         marquee: 'marquee 20s linear infinite',
+        'fade-in-down': 'fade-in-down 0.5s ease-out',
       },
       fontFamily: {
         roboto: ['Roboto', 'sans-serif'],

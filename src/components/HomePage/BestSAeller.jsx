@@ -1,8 +1,20 @@
 import FeaturedCollectionCard from "../HomePageReusable/FeaturedCollectionCard";
-
+import React, { useState, useEffect } from "react";   
 function BestSAeller() {
+    const [showContent, setShowContent] = useState(false);
+  
+    useEffect(() => {
+      // Trigger the content to appear after 1 second
+      const timer = setTimeout(() => {
+        setShowContent(true);
+      }, 500); // 1 second delay
+      return () => clearTimeout(timer);
+    }, []);
   return (
-    <div className=" items-center hero">
+    <>
+    <div  className={`items-center hero transition-opacity duration-1000 ${
+          showContent ? "opacity-100" : "opacity-0"
+        }`}>
       {/* Section Heading */}
       <h1 className="text-center text-[3rem] md:text-[4rem] font-bold font-jersey mt-[-100rem]  md:mt-[-33rem]">
         Best Seller
@@ -42,6 +54,27 @@ function BestSAeller() {
         /></div>
       </div>
     </div>
+      <style jsx>{`
+        @tailwind utilities;
+
+        @layer utilities {
+          .animate-fade-in-down {
+            animation: fade-in-down 0.5s ease-out both;
+          }
+
+          @keyframes fade-in-down {
+            0% {
+              opacity: 0;
+              transform: translateY(-20px);
+            }
+            100% {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+        }
+      `}</style>
+      </>
   );
 }
 
