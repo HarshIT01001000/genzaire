@@ -26,7 +26,6 @@ function ProductCoustmize(){
           item2={"FUSION PANEL Denim Jacket "}
           item3={"₹999/"}
         />
-        <br></br>
             <div>
             <FeaturedCollectionCard 
           Item4={

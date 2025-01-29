@@ -10,6 +10,8 @@ import Exclusive from './components/HomePage/Exclusive.jsx'
 import BestSeller from './components/HomePage/BestSAeller.jsx'
 import Marquee from './components/HomePage/Marquee.jsx'
 import ProductsBasic from './components/Products/ProductsBasic.jsx'
+import PageBuyCart from './components/ProductsReuseableCompo/PageBuyCart.jsx'
+import OrderPage from './components/ProductsReuseableCompo/OrderPage.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,6 +23,7 @@ function App() {
     <Marquee></Marquee>
     <BestSeller></BestSeller>
     <Exclusive></Exclusive>
+    {/* <OrderPage></OrderPage> */}
     </>
   )
 }

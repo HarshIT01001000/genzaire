@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import FeaturedCollectionCard from "../HomePageReusable/FeaturedCollectionCard";
+import { Link } from "react-router-dom";
+
 
 function FeaturedCollection() {
   const [showContent, setShowContent] = useState(false);
@@ -15,13 +17,13 @@ function FeaturedCollection() {
   return (
     <>
       <div
-        className={`items-center hero transition-opacity duration-1000 ${
+        className={`items-center hero transition-opacity duration-1000 md:mt-0 mt-10 ${
           showContent ? "opacity-100" : "opacity-0"
         }`}
       >
         {/* Section Heading */}
         <h1
-          className="text-center text-[3rem] md:text-[4rem] font-bold font-jersey animate-fade-in-down mt-[-100rem] md:mt-[-32rem]"
+          className="text-center text-[3rem] md:text-[4rem] font-bold font-jersey animate-fade-in-down  mt-[-111rem] md:mt-[-35rem]"
         >
           Featured Collection
         </h1>
@@ -31,13 +33,14 @@ function FeaturedCollection() {
           <div className="group">
             <FeaturedCollectionCard
               Item4={
-                "https://wtflex.in/cdn/shop/files/LocalsOnlyWhiteWebsiteFront.png?v=1726668069&width=360"
+                "https://wtflex.in/cdn/shop/files/Shadowjacketwebsiteback.jpg?v=1735877742&width=360"
               }
               item1={
                 "https://wtflex.in/cdn/shop/files/wtf_wht.png?v=1687756362&width=360"
               }
               item2={"FUSION PANEL Denim Jacket "}
               item3={"₹999/"}
+              button={<>Add to card</>}
             />
           </div>
           <div className="group">
@@ -50,6 +53,8 @@ function FeaturedCollection() {
               }
               item2={"FUSION PANEL Denim Jacket "}
               item3={"₹999/"}
+              button={<>Add to card</>}
+
             />
           </div>
           <div className="group">
@@ -62,6 +67,8 @@ function FeaturedCollection() {
               }
               item2={"FUSION PANEL Denim Jacket "}
               item3={"₹999/"}
+              button={<>Add to card</>}
+
             />
           </div>
         </div>

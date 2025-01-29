@@ -12,11 +12,11 @@ function BestSAeller() {
     }, []);
   return (
     <>
-    <div  className={`items-center hero transition-opacity duration-1000 ${
+    <div  className={`items-center hero transition-opacity duration-1000  md:mt-0 mt-10 ${
           showContent ? "opacity-100" : "opacity-0"
         }`}>
       {/* Section Heading */}
-      <h1 className="text-center text-[3rem] md:text-[4rem] font-bold font-jersey mt-[-100rem]  md:mt-[-33rem]">
+      <h1 className="text-center text-[3rem] md:text-[4rem] font-bold font-jersey mt-[-111rem]  md:mt-[-33rem]">
         Best Seller
       </h1>
 
