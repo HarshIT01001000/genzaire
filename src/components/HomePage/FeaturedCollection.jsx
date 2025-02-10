@@ -38,20 +38,22 @@ function FeaturedCollection() {
   ];
 
   return (
-    <div className={`items-center hero transition-opacity duration-1000 ${showContent ? "opacity-100" : "opacity-0"}`}>
-      <h1 className="text-center text-[3rem] md:text-[4rem] font-bold font-jersey mt-[-106.9rem] md:mt-[-32rem]">
+    <div className="relative hero md:h-full h-[50rem] overflow-hidden  flex justify-center items-center">
+    <div className={`relative p-2 flex flex-col items-center hero transition-opacity duration-1000 ${showContent ? "opacity-100" : "opacity-0"}`}>
+      <h1 className="text-center text-[3rem] md:text-[4rem] font-bold font-jersey  relative z-10 mt-6">
         Featured Collection
       </h1>
 
-      <div className="flex flex-col md:flex-row justify-center items-center md:space-x-4 lg:space-x-10 mt-20 md:mt-[9rem] px-4 md:px-8 lg:px-16">
+      <div className="carousel carousel-center  space-x-2 md:space-x-4  rounded-box mt-10 relative z-0">
         {products.map((product) => (
-          <FeaturedCollectionCard
-            key={product.id}
-            //spread operator
-            {...product}
-            onAddToCart={() => addToCart(product)} // Pass function to add item to cart
-          />
+          <div key={product.id} className="carousel-item">
+            <FeaturedCollectionCard
+              {...product}
+              onAddToCart={() => addToCart(product)}
+            />
+          </div>
         ))}
+      </div>
       </div>
     </div>
   );

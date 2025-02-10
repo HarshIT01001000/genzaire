@@ -1,5 +1,6 @@
 import React from "react";
 import { useCart } from "../../context/CartContext";
+import { Link } from "react-router-dom";
 
 function AddedItems() {
   const { cart, removeFromCart } = useCart(); // Get cart items and remove function
@@ -15,6 +16,7 @@ function AddedItems() {
           Your cart is empty. Start shopping now! 🛍️
         </p>
       ) : (
+       <>
         <div className="container mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {cart.map((item) => (
@@ -52,6 +54,13 @@ function AddedItems() {
             ))}
           </div>
         </div>
+
+        <div className=" flex justify-center items-center mt-14">
+          <Link to={'/UserDetalis'}><button className="btn btn-wide bg-black text-white hover:text-black ">Ckeck Out</button>
+          </Link>
+        </div>
+       </>
+        
       )}
     </div>
   );

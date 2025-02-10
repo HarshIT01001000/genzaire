@@ -11,6 +11,7 @@ import OrderPage from './components/ProductsReuseableCompo/OrderPage.jsx';
 import PageBuyCart from './components/ProductsReuseableCompo/PageBuyCart.jsx';
 import AddedItems from './components/HomePage/AddedItems.jsx';
 import { CartProvider } from './context/CartContext.jsx';
+import UserDetails from './components/HomePage/UserDetalis.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -25,6 +26,7 @@ createRoot(document.getElementById('root')).render(
       <Route path='/Form' element={<OrderPage></OrderPage>}></Route>
       <Route path='/PageBuyCart' element={<PageBuyCart></PageBuyCart>}></Route>
       <Route path='/AddedItems' element={<AddedItems></AddedItems>}></Route>
+      <Route path='/UserDetalis' element={<UserDetails></UserDetails>}></Route>
     </Route>
   </Routes>
 </Router>

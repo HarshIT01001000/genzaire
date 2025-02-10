@@ -38,23 +38,26 @@ function BestSAeller() {
     ];
   return (
     <>
-    <div  className={`items-center hero transition-opacity duration-1000  md:mt-0 mt-10 ${
+    <div className="relative hero md:h-full h-[50rem] overflow-hidden flex justify-center items-center">
+    <div  className={` p-2 flex flex-col items-center hero transition-opacity duration-1000  md:mt-0 mt-10 ${
           showContent ? "opacity-100" : "opacity-0"
         }`}>
       {/* Section Heading */}
-      <h1 className="text-center text-[3rem] md:text-[4rem] font-bold font-jersey mt-[-111rem]  md:mt-[-33rem]">
+      <h1 className="text-center text-[3rem] md:text-[4rem] font-bold font-jersey  relative z-10 mt-6">
         Best Seller
       </h1>
-      <div className="flex flex-col md:flex-row justify-center items-center md:space-x-4 lg:space-x-10 mt-20 md:mt-[9rem] px-4 md:px-8 lg:px-16">
-      {products.map((product) => (
-  <FeaturedCollectionCard
-    key={product.id}
-    {...product}
-    onAddToCart={() => addToCart(product)} // Pass function to add item to cart
-  />
-))}
-
+     
+      <div className="carousel carousel-center space-x-2 md:space-x-4 p-4  rounded-box mt-10 relative z-0">
+        {products.map((product) => (
+          <div key={product.id} className="carousel-item">
+            <FeaturedCollectionCard
+              {...product}
+              onAddToCart={() => addToCart(product)}
+            />
+          </div>
+        ))}
       </div>
+    </div>
     </div>
       <style jsx>{`
         @tailwind utilities;
