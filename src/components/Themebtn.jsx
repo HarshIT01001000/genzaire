@@ -1,4 +1,4 @@
-import useTheme from "../context/theme"
+import useTheme from "../context/Theme.jsx"
 
 
 function ThemeBtn() {
