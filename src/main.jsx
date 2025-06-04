@@ -10,16 +10,18 @@ import ProductPrinted from './components/Products/ProductPrinted.jsx';
 import OrderPage from './components/ProductsReuseableCompo/OrderPage.jsx';
 import PageBuyCart from './components/ProductsReuseableCompo/PageBuyCart.jsx';
 import AddedItems from './components/HomePage/AddedItems.jsx';
-import { CartProvider } from './context/CartContext.jsx';
 import UserDetails from './components/HomePage/UserDetalis.jsx';
+import Login from './components/Login.jsx';
+import { CartProvider } from './context/CartContext.jsx';
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <CartProvider>
+  <CartProvider>
+    <StrictMode>
     <Router>
   <Routes>
+    <Route path='/' element={<Login/>}></Route>
     <Route path="" element={<Layout />}>
-      <Route path="/" element={<App />} />
+      <Route path="/Components" element={<App />} />
       <Route path="/ProductBasics" element={<ProductsBasic />} />
       <Route path="/ProductCoustmize" element={<ProductCoustmize />} />
       <Route path="/ProductPrinted" element={<ProductPrinted />} />
@@ -30,7 +32,7 @@ createRoot(document.getElementById('root')).render(
     </Route>
   </Routes>
 </Router>
-</CartProvider>
 
   </StrictMode>
+  </CartProvider>
 );

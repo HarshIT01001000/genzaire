@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 import Nav from './components/HomePage/Nav.jsx';
 import Hero from './components/HomePage/Hero.jsx';
@@ -9,31 +9,38 @@ import BestSeller from './components/HomePage/BestSAeller.jsx';
 import Marquee from './components/HomePage/Marquee.jsx';
 import PageBuyCart from './components/ProductsReuseableCompo/PageBuyCart.jsx';
 import OrderPage from './components/ProductsReuseableCompo/OrderPage.jsx';
+import { ThemeProvider } from './context/Theme.jsx';
+import ThemeBtn from './components/Themebtn.jsx';
 
 function App() {
-  const [cartItems, setCartItems] = useState([]);
+   const [themeMode, setthemeMode] = useState("light")
 
-  // Function to add items to the cart
-  const addToCart = (item) => {
-    setCartItems((prevItems) => [...prevItems, item]);
-  };
+  const lightTheme=()=>{
+    setthemeMode("light")
+  }
+  const darkTheme=()=>{
+    setthemeMode("dark")
+  }
+//actual theme change
+useEffect(() => {
+    document.querySelector('html').classList.remove("light", "dark")
+    document.querySelector('html').classList.add(themeMode)
+  }, [themeMode])
 
-  // Function to remove items from the cart
-  const removeFromCart = (index) => {
-    setCartItems((prevItems) => prevItems.filter((_, i) => i !== index));
-  };
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col dark:bg-black">
     
 
 
-        <Hero />
-        <FeaturedCollection addToCart={addToCart} />
+        <ThemeProvider value={{themeMode, lightTheme, darkTheme}}>
+          <Hero />
+        <FeaturedCollection />
         <Marquee />
-        <BestSeller addToCart={addToCart}/>
+        <BestSeller/>
         <Exclusive />
-        {/* <PageBuyCart /> */}
+        <ThemeBtn></ThemeBtn>
+        </ThemeProvider>
 
     
     </div>
